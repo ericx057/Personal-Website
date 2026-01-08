@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Personal portfolio website showcasing projects, skills, and professional experience.">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">Eric Xu</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h1 class="section-title">About Me</h1>
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a 1B Software Engineering student studying and based at UWaterloo (open to relocate).
+                        I hold both American and Canadian citizenships.
+                        My interests lie mostly in optimization, scaled solutions, and machine learning.
+                    </p>
+                    <p class="about-text">
+                        I have a moderate background in competative math. I believe in simplicity, clarity, and
+                        attention to detail.
+                        Software should be maintainable and simple rather than complex.
+                        I am open to opportunities that challenge me to grow and contribute meaningfully.
+                    </p>
+                </div>
+                <div class="about-links">
+                    <a href="https://github.com/ericx057" target="_blank" rel="noopener noreferrer" class="link-button">
+                        View GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/eric-xu-2281792a0" target="_blank" rel="noopener noreferrer"
+                        class="link-button">
+                        View LinkedIn
+                    </a>
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="link-button">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2 class="section-title">Tools and Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Languages</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">Python</li>
+                            <li class="skill-item">C++</li>
+                            <li class="skill-item">SQL</li>
+                            <li class="skill-item">Lua</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Infrastructure</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">Linux</li>
+                            <li class="skill-item">Docker / Kubernetes</li>
+                            <li class="skill-item">Git</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Machine Learning</h3>
+                        <ul class="skill-list">
+                            <li class="skill-item">PyTorch</li>
+                            <li class="skill-item">Pandas</li>
+                            <li class="skill-item">Numpy</li>
+                            <li class="skill-item">CUDA</li>
+                            <li class="skill-item">Triton</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3 class="project-title">Llama 3.1 - 70B training harness</h3>
+                        <p class="project-description">
+                            A fault-tolerant training harness that enables fine-tuning Llama-3.1-70B on 48GB consumer
+                            VRAM
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">CUDA</span>
+                            <span class="tech-tag">FlashAttention-2</span>
+                            <span class="tech-tag">Liger Kernel</span>
+                            <span class="tech-tag">BitsAndBytes</span>
+                        </div>
+                        <a href="https://github.com/ericx057/Llama-3.1---70B-training-harness" target="_blank"
+                            rel="noopener noreferrer" class="project-link">View Project</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-text">
+                    Interested in working together or have a question?
+                    Feel free to reach out.
+                </p>
+                <a href="ericx057@gmail.com" class="link-button link-button-primary">
+                    Send Email
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Eric Xu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
