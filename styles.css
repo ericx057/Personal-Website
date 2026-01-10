@@ -138,6 +138,38 @@ body::before {
     }
 }
 
+/* ===============================
+   Cursor Disruption Effect
+   =============================== */
+.cursor-disruption {
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease;
+    mix-blend-mode: multiply;
+    background: radial-gradient(
+        circle at center,
+        rgba(250, 250, 250, 0.95) 0%,
+        rgba(250, 250, 250, 0.7) 20%,
+        rgba(250, 250, 250, 0.3) 40%,
+        transparent 60%
+    );
+    filter: blur(40px);
+    animation: cursorPulse 3s ease-in-out infinite;
+}
+
+@keyframes cursorPulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
 a {
     color: inherit;
     text-decoration: none;
